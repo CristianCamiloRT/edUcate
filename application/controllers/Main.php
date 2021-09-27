@@ -19,13 +19,11 @@ class Main extends CI_Controller {
 	{
 		$this->load->library('parser');
         $this->load->model('areas_model');
-
-		
-		var_Dump($this->areas_model->get_videos($this->input->get('materia')));
-		// exit();
+		$materia = $this->areas_model->get_nombre_materia($this->input->get('materia'));
 		$data = array(
-			'_title' => 'Videos de '.$this->input->get('area'),
-			'_description' => 'Videos de '.$this->input->get('area'),
+			'_title' => 'Videos de '.$materia->nombre,
+			'_description' => 'Videos de '.$materia->nombre,
+			'_content' => $this->load->view('content/videos', ['videos' => $this->areas_model->get_videos($this->input->get('materia')), 'materia' => $materia->nombre], true)
 		);
 
 		$this->parser->parse('layout', $data);
