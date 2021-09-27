@@ -16,6 +16,6 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt possimus, autem quis ipsa hic delectus cupiditate ea, optio quos dicta quas doloremque debitis deserunt, amet earum tempore dignissimos nemo accusantium.</p>
             </div>
         </div>
-        <p class="copyright">edUcate © 2021</p>
+        <p class="copyright mb-0">edUcate © 2021</p>
     </div>
 </div>

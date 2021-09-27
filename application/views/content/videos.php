@@ -14,6 +14,9 @@
       <div id="collapse<?= $video->id ?>" class="collapse" aria-labelledby="heading<?= $video->id ?>" data-parent="#accordion">
         <div class="card-body">
         <?= $video->descripcion ?>
+        <div class="mt-3">
+          <a href="./ver?id_video=<?= $video->id ?>" class="btn btn-primary active" role="button" aria-pressed="true">Ver Video</a>
+        </div>
         </div>
       </div>
     </div>

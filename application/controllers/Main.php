@@ -28,4 +28,19 @@ class Main extends CI_Controller {
 
 		$this->parser->parse('layout', $data);
 	}
+
+	public function ver()
+	{
+		$this->load->library('parser');
+
+        $this->load->model('areas_model');
+		$video = $this->areas_model->get_video($this->input->get('id_video'));
+		$data = array(
+			'_title' => $video->titulo,
+			'_description' => $video->titulo,
+			'_content' => $this->load->view('content/ver', ['video' => $video], true)
+		);
+
+		$this->parser->parse('layout', $data);
+	}
 }
