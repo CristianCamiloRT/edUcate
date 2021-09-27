@@ -15,7 +15,7 @@
                 $this->load->model('areas_model');
                 foreach($CI->areas_model->get_materias($area->id) as $materia) {
               ?>
-                <a class="dropdown-item" href="/videos?materia=<?= $materia->id; ?>"><?= $materia->nombre; ?></a>
+                <a class="dropdown-item" href="./videos?materia=<?= $materia->id; ?>"><?= $materia->nombre; ?></a>
               <?php } ?>
             </div>
         </li>
