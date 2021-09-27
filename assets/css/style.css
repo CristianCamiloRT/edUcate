@@ -4,23 +4,15 @@
     bottom: 0px;
     position: absolute;
 }
+#footer2{
+    color:#f0f9ff;
+    background-color:#343a40;
+    bottom: 0px;
+    position: relative;
+}
 @media (max-width: 767px) {
     #footer {
         position: relative;
     }
 }
   
-@media (min-width: 576px) {
-    .bd-example {
-    padding: 1.5rem;
-    margin-right: 0;
-    margin-left: 0;
-    border-width: .2rem;
-}}
-.bd-example {
-    position: relative;
-    padding: 1rem;
-    margin: 1rem -15px 0;
-    border: solid #f7f7f9;
-    border-width: .2rem 0 0;
-}
