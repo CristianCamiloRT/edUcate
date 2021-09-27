@@ -20,4 +20,8 @@ class Areas_model extends CI_Model
         return $query->result();
     }
    
+    function get_videos($id_materia){
+        $query = $this->db->get_where('videos', array('id_materia' => $id_materia));
+        return $query->result();
+    }
 }
